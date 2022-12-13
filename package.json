@@ -1,0 +1,23 @@
+{
+  "name": "grace-sw-testing",
+  "version": "1.0.0",
+  "description": "S/W Testing Exam",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Graziee6/grace-sw-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Graziee6/grace-sw-testing/issues"
+  },
+  "homepage": "https://github.com/Graziee6/grace-sw-testing#readme",
+  "dependencies": {
+    "sass": "^1.56.2"
+  }
+}

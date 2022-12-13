@@ -1,0 +1,73 @@
+$bright: #fff;
+$main-bckg: #e7c187;
+$big-height: 400px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.calcClass {
+  width: 50%;
+  height: $big-height;
+  border-radius: 30px;
+  margin: auto;
+  background-color: $main-bckg;
+  margin-top: 100px;
+  padding: 30px;
+}
+
+.calcClass * {
+  margin: 0 0 30px 0;
+}
+
+.operands,
+.operation,
+.result {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+}
+
+.operands input,
+select {
+  height: 40px;
+  padding: 5px;
+  border: none;
+}
+
+.btn,
+#res {
+  height: 40px;
+  width: 100px;
+  padding: 5px;
+  font-weight: 700;
+}
+
+.btn {
+  background-color: $bright;
+  transition: all 0.2s ease-in;
+}
+form {
+  margin-top: 40px;
+}
+
+select {
+  width: 70px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.result #res {
+  border: 2px solid $bright;
+}
+form input[type="submit"]:hover {
+  background-color: $main-bckg;
+  color: $bright;
+  transform: scale(1.05);
+}
