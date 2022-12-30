@@ -21,6 +21,10 @@ public class MathOperatorImpl implements MathOperator {
                 return  op1-op2;
             case "**":
                 return  Math.pow(op1,op2);
+            case "log":
+                return  op1*Math.log10(op2);
+            case "ln":
+                return  op1*Math.log(op2);
             default:
                 throw new RuntimeException("Unknown operation");
         }

@@ -38,4 +38,29 @@ public class MathOperatorImplTest {
     @SneakyThrows
     @Test
     public void substract_success() {assertEquals(11, service.doMath(21, 10, "-"));}
+
+    @SneakyThrows
+    @Test
+    public void log10_success() {assertEquals(2, service.doMath(2, 10, "log"));}
+
+    @SneakyThrows
+    @Test
+    public void log10_fail() {assertNotEquals(2, service.doMath(21, 10, "log"));}
+
+    @SneakyThrows
+    @Test
+    public void ln_fail() {assertNotEquals(11, service.doMath(21, 10, "ln"));}
+
+    @SneakyThrows
+    @Test
+    public void power_success() {assertEquals(4, service.doMath(2, 2, "**"));}
+
+    @SneakyThrows
+    @Test
+    public void power_failure() {assertNotEquals(11, service.doMath(21, 10, "**"));}
+
+
+    @SneakyThrows
+    @Test
+    public void ln_success() {assertEquals(11, service.doMath(11, Math.exp(1.0), "ln"));}
 }
